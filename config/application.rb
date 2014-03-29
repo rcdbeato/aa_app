@@ -9,7 +9,11 @@ require "sprockets/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
+<<<<<<< HEAD
 Bundler.require(*Rails.groups)
+=======
+Bundler.require(:default, Rails.env)
+>>>>>>> dc30c525e2748cf9d0d15024ee2ebbfbf187caee
 
 module AaApp
   class Application < Rails::Application
